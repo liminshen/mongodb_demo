@@ -32,7 +32,4 @@ app.get('/', indexRouter);
 
 
 
-
-
-console.log(app.locals);
 module.exports = app;

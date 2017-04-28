@@ -1,6 +1,28 @@
 extends layout
 
 block content
-  h1= title
-  p.content Welcome to #{title}
-      span.test= title
+    h1= title
+    p.content Welcome to #{title}
+        span.test= title
+    form#tform
+      | 用户名：
+      input(type='text', id="form-name")
+      br
+      |         年龄：
+      input(type='text', id="form-age")
+      br
+      |         邮箱：
+      input(type='text', id="form-email")
+      br
+      |         性别：
+      input(type='text', id="form-sex")
+      br
+      input(type='button', value='ajax发送', class="submit")
+    #debug
+    .loginBox
+        input(type="text" id="username")
+        br
+        input(type="text" id="pwd")
+        .login-btn 登录
+
+      script(src="./js/index.js")
